@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date And Time</title>
+</head>
+
+<body>
+    <div class="container">
+        Current Time And Date is <span id="time"></span>
+    </div>
+</body>
+
+<script>
+    // let now = new Date()                                  // Date is an constructor
+    // console.log(now)
+
+    // let beautyDate = new Date("2030-08-19")         //The date you wanna show
+    // console.log(beautyDate)
+    // An Constructor: which construct an Object 
+
+
+    //------------------- To return from any existing object------------------------
+    // let Dt  = now.getDate();
+    // console.log('The date is ' , Dt);
+
+    // let Month  = now.getMonth();
+    // console.log('The Month is ' , Month);
+
+    // let Year  = now.getFullYear();
+    // console.log('The Year is ' , Year);
+
+    // let Hour  = now.getHours();
+    // console.log('The Hour is ' , hour);
+
+    // let NewDate = (year, month ,date ,hours, minutes, seconds
+
+    // ----------------------Setting Desired Date and Anything----------------------
+    // let NewDate = new Date(2020, 09, 17, 10,10,10);
+    // console.log(NewDate)
+
+    //  NewDate.setDate(2)
+    // console.log(NewDate)
+    // NewDate.setHours(23)
+    // console.log(NewDate)
+
+    // let UpdateTime = new Date();
+    // function UpdateTime() {
+    //     UpdateTime.innerHTML = new Date();
+    // }
+    // setinterval(UpdateTime, 1000)
+
+
+    // --------------Make a clock---------------
+        setInterval(updateTime, 1000);
+
+        function updateTime() {
+            time.innerHTML = new Date();
+        }
+
+</script>
+
+</html>

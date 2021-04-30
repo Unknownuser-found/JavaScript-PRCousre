@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction Using alert, confirm and prompt</title>
+</head>
+
+<body>
+    <p>This is a Para</p>
+
+    <script>
+        //  --------------------Alert-----------------
+        // alert("This is a message")
+        //  Alert in a pop-up message like a warning when you visit a website
+        // Alert opens a modal window---------------In this user can't do anything only read
+        // Modal Window:::: A window that pop ups and main window hides behind it and would'nt be visible until you finish Modal window
+
+
+        // ----------------------------    prompt -----------------
+        // let name = prompt('What is your name?', "Guest")       // Guest is the default value nd its necessary beshak "" like this
+        // console.log(name)
+
+        // --------------------------Conform-----------------------------
+        // used to ask user , are you sure? to double check basically
+        let deletePost = confirm("do you really want to delete this post")
+        // console.log(deletePost)
+        // if yes then true else false                         --Also modal window
+
+        if (deletePost == true) {
+            console.log("Your post deleted successfully")
+        }
+
+        else {
+            console.log("Your post is saved sccessfully")
+        }
+
+
+    </script>
+
+</body>
+
+</html>

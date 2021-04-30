@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS SetTimeOut and ClearTimeOut</title>
+</head>
+
+<body>
+    <div class="container">
+       Time now is <span id="time"></span>
+    </div>
+</body>
+<script>
+    // We use this functions to set function delay and  bar bar iss time pe run ho toh Hm in functinos ka use krte h 
+    // SetTimeOut -----Allows us to run the function once after the interval of time
+    // ClearTimeOut ----Allows us to run the function repeatedly after the interval of time
+
+    // --------------------------SetTimeOut
+    function goodmorning(name, byetext) {
+        console.log("Hello Good Morning " + name + byetext);        // Values are mentioned in settimeout func
+    }
+    // goodmorning();
+    // setTimeout(goodmorning, 3000, "elliot ", "Okay now Bye")       // Necessary to mention arguments or we can say value putting
+    // timeout = setTimeout(goodmorning, 3000, "elliot ", "Okay now Bye")
+    // console.log(timeout)                            // This will provide us unique id of settimeout and we can use it to cleartimeout
+
+// ---------------------------------ClearoutTime-------------------
+    // clearTimeout(timeout)
+
+
+    // -------------------Set Interval----------------
+intervalId =  setInterval(goodmorning, 1000, "Elliot ", "Now Bye");           // Kitni Der Mein start hoke hota he rahe
+
+clearInterval(intervalId)
+
+
+function time(){
+    time = new Date();
+    // console.log(time);
+    document.getElementById('time').innerHTML = time
+}
+setInterval(time, 1000);
+
+
+
+</script>
+
+</html>

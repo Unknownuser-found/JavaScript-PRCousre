@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        str = 'this is a string';
+        console.log(str);
+        //INdex kya h uss string ka starting se
+        position = str.indexOf('a');
+        console.log(position);
+        //INdex kya h uss string ka lst side se
+        position = str.lastIndexOf('a');
+        console.log(position);
+        //--------------Types of Slicing----------
+        substr1 = str.substr(1, 5)                    // substr function mein last wala number dikhayga
+        substr2 = str.slice(1, 5);                     //This is slicing   //Last wala number nahi dikhayga
+        substr3 = str.substring(1, 5);                //Same like slice but you can not provide negative vlaues
+        // console.log(substr1)
+        // console.log(substr2)
+        console.log(substr3)
+        //-----------------Types of some printing functions-------------
+
+        //To replace charaters in strings
+        // replaced = str.replace('string', 'harry')       //Replacing Syntax
+        // console.log(replaced)                 
+        // console.log(str.toUpperCase())                      //To print in Uppercase
+        // console.log(str.toLowerCase())                       //To print in Lowercase
+        // newstring = str.concat('Add These words please')         //concate words means add just like + , so use + instead
+        // console.log(newstring)
+        // stringwthwhitespaces = '    This have         whitespaces'       
+        // console.log(stringwthwhitespaces)
+        // console.log(stringwthwhitespaces.trim())                      //Trim will remove spaces from beginning and from last
+
+        // char2 = str.charAt(5, 10)                                       //Us index pr konsa Character h
+        // console.log(char2)
+
+        //------one more slicing---------------------
+        console.log(str[5])
+
+    </script>
+</body>
+
+</html>

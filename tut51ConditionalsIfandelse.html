@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditionals</title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        // {
+        //This space is a block
+        // }
+        //    let a = "u"     
+        //    console.log(a)                             
+        //    {
+        //        let  a = 'uu'         //In this block this a is limited to this block
+        //        console.log(a)
+        //    }
+        //-----------Constant Keyword-------------
+        // const a = "This cannot be changed"            //const means constant and we can't manipulate it
+        // a = "This will show Error"              //Let is changeble
+        // console.log(a)
+
+        //--------------If Else statements----------------------
+        // let age = 18;
+        // if(age>18){
+        //     console.log("Yes, You can drive")
+        // }
+        // else if (age==18){
+        //     console.log('YOu are an teenager')
+        // }
+        // else{
+        //     console.log("No, You can't drive")
+        // }
+        //-----------------Switch  Case Statements------------------
+        const cups = 5;
+        switch (cups) {
+            case 4:
+                console.log("This value of cups are 4")
+                break;                                          //If you will not use break ,it will run afterwords all the properties
+            case 5:
+                console.log("This value of cups are 5")
+                break;
+            case 6:
+                console.log("This value of cups are 6")
+                break;
+            case 7:
+                console.log("This value of cups are 7")
+                break;
+        
+            default:
+                console.log('The value is none of the selection')
+                break;
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+<style>
+    #btn{
+        color: cyan;
+        border: 2px solid black;
+        padding: 10px 600px;
+        background-color: red;
+        font-size: 30px;
+    }
+
+</style>
+
+</head>
+<body>
+    <!-- Any click is considered under Event -->
+
+     <!-- browser Events:
+    click
+    contextmenu
+    mouseover/mouseout 
+    mousedown/mouseup    <!-Mouse scroller press krna and chordns 
+    submit
+    focus --> 
+
+    <div class="container">
+        <h1>This is the Heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, harum repellat nisi soluta aperiam dolor fugiat illum veniam? Numquam pariatur dignissimos aspernatur exercitationem aliquid error voluptates odio et dolore dicta?</p>
+    </div>
+    <button id="btn" onclick="togglehide()">Show/Hide</button>
+
+</body>
+
+<script>
+    // let para = document.getElementById('para');
+    // para.addEventListener('mouseover', function run(){
+    //     alert('Mouse Under Para')
+    // });
+    // para.addEventListener('mouseout', function run(){
+    //     alert('Mouse is now outsideoutside Para')
+    // });
+
+    function togglehide(){
+        // let hide = document.getElementsById('btn');
+        // let hide = document.getElementsById('para');
+        if( para.style.visibility != 'hidden') {
+            para.style.visibility = 'hidden';
+        }
+        else{
+            para.style.visibility = 'visible';
+        }
+ 
+    }
+</script>
+
+
+</html>
