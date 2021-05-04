@@ -1,0 +1,3 @@
+# JavaScript-Cousre
+This is my personal Java Script Course only for myself ifso ever in future...
+And in any case if you are looking at these...Just dont judge
