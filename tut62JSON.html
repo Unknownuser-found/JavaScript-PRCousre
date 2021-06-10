@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    This is blank sentence
+<script>
+let jsonobj = {
+    name: "Yogesh",
+    age: 12,
+    friend:"Elliot Alderson"
+}
+console.log(jsonobj)   ;
+
+let MyJsonStr= JSON.stringify(jsonobj);             // to replace into a string
+console.log(MyJsonStr)
+
+// Replacing a key
+
+let replacedKey= MyJsonStr.replace("Yogesh", "Elliot")
+console.log(replacedKey)
+
+
+// To replace the converted string back to Object
+NewJsonStr = JSON.parse(MyJsonStr);     // requires a valid mtlb ki converted object into string he chaiye
+console.log(NewJsonStr)
+
+</script>
+</body>
+</html>     

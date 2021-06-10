@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border: 2px solid red;
+    justify-content: center;
+}
+
+#btn{
+    padding: 10px;
+    background-color: black;
+    border: 2px solid cyan;
+    color: red;
+    font-weight: 900;
+    font-size: 29px;
+    font-size: bold;
+
+}
