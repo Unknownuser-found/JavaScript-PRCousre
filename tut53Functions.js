@@ -17,9 +17,8 @@ greet(name4, );
 
 
 
-function sum(a,b,c) {
-    let d = a + b + c ; 
-    return d;                  //After return function is stoped
+ sum = (a,b,c) => d = a + b + c
+ return d;          //After return function is stoped
     // console.log("Can's show the output") //This is unreachable
 }
 let returnvalue = sum(1,2,3);

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <div class="container">
+        This is arraow tutorial
+    </div>
+</body>
+<script>
+    // function sayhello(){
+    //     console.log("Hello Love");
+    // }
+    // ----------------------Arrow Function---------------------------------
+//     sayhello = () => {
+//         console.log("Hello Love");
+//     }
+// sayhello();
+
+
+// ----------------------A short cut way of an function ------------
+    // setTimeout(() => {
+    //     console.log("We are Inside");
+    // }, 4000);
+
+// --------------------------Very best shortcut way-----------------------
+    // let sum =(a, b) => a+b;
+    // console.log(10+2600)
+
+    // let half = a =>  a/2              // Work with only one argument
+    // console.log(half(3))                
+
+    let obj1 = {
+        mornin: "Good Morning and ",
+        names: ["Elliot", "Tyrel", "Irving"],
+        speak(){
+            this.names.forEach((student)=>{
+                console.log( this.mornin +"Hello Friend "  + student);       // Ye this apne he block mein dhundeyga wo variable but in 
+                // array wo bahar se leke aa jayga but function mein ye undefined show kra dega, also known as lexical this    
+            });
+        }
+    }
+  obj1.speak();
+
+</script>
+</html>
